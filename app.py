@@ -48,7 +48,7 @@ get_label = lambda lst: np.array([pred_dict[x] for x in lst])
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-MODEL_PATH = os.path.dirname(__file__) + '/models/best_model.h5'
+MODEL_PATH = 'models/best_model.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
@@ -156,4 +156,5 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
+
