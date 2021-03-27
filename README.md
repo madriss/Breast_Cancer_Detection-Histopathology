@@ -7,5 +7,7 @@ Invasive Ductal Carcinoma (IDC) is the most common subtype of all breast cancers
 Dataset can be found here : https://www.kaggle.com/paultimothymooney/breast-histopathology-images
 
 ---
-To build the image : docker image build -t breast_cancer_detection .
-To run the image : docker run -d -p 5000:5000 breast_cancer_detection
+To build the image : docker image build -t breast_cancer_detection .  
+To run the image : docker run -d -p 5000:5000 breast_cancer_detection  
+
+A live demo for this app can be accessed here : https://breast-cancer-flask.ew.r.appspot.com/
